@@ -1,0 +1,85 @@
+/* styles/Auth.css */
+
+/* General container styling */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Login form styling */
+  .login-form {
+    background-color: #111; /* Dark grey background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* White shadow */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* White heading */
+  }
+  
+  /* Input fields */
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444; /* Grey border */
+    border-radius: 4px;
+    background-color: #222; /* Dark grey background */
+    color: #fff; /* White text */
+    font-size: 1rem;
+  }
+  
+  .login-input::placeholder {
+    color: #777; /* Light grey placeholder text */
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #fff; /* White border on focus */
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333; /* Dark grey button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #555; /* Lighter grey on hover */
+  }
+  
+  /* Register link */
+  .register-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .register-link a {
+    color: #fff; /* White link */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .register-link a:hover {
+    color: #aaa; /* Light grey on hover */
+  }
+  

@@ -1,0 +1,74 @@
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+form input, 
+form select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+form select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+form button {
+    width: 90%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+form div {
+    margin-top: 10px;
+}
+
+form div a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form div a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+} 

@@ -1,0 +1,23 @@
+.overview {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,222 @@
+/* Admin Dashboard Styling */
+.admin-dashboard {
+    background-color: #ffffff; /* White background for the dashboard */
+    color: black; /* Black text */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh; /* Ensure it takes the full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .admin-dashboard h1 {
+    font-size: 2.5rem; /* Increase size for larger screens */
+    margin-bottom: 20px;
+    color: black; /* Set title color to black */
+  }
+  
+  .admin-dashboard p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard button {
+    background-color: #000000; /* Blue button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-dashboard button:hover {
+    background-color: #000000; /* Darker blue on hover */
+  }
+  
+  .btn-add {
+    background-color: #28a745; /* Green for adding an apartment */
+  }
+  
+  .add-apartment-form {
+    background-color: #f7f7f7; /* Light grey form background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .add-apartment-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .add-apartment-form input,
+  .add-apartment-form select {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .add-apartment-form .btn-submit {
+    background-color: #000000; /* Blue submit button */
+  }
+  
+  .apartments-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .apartments-list th,
+  .apartments-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .apartments-list th {
+    background-color: #000000; /* Blue header */
+    color: white;
+  }
+  
+  .apartments-list tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .apartments-list button {
+    background: none;
+    color: #000000; /* Blue button */
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  
+  .apartments-list button:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .tenant-card,
+  .occupied-apartment-card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .tenant-card p,
+  .occupied-apartment-card p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  .tenant-card strong,
+  .occupied-apartment-card strong {
+    color: #000000; /* Blue for labels */
+  }
+  
+  /* Chart Styling */
+  .occupancy-ratio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .pie-chart-container {
+    width: 100%;
+    height: 300px; /* Control the chart size */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pie-chart-container canvas {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  /* Responsive adjustments for mobile devices */
+  @media (max-width: 768px) {
+    .admin-dashboard {
+      padding: 10px;
+    }
+  
+    .admin-dashboard h1 {
+      font-size: 2rem; /* Adjust for smaller screens */
+    }
+  
+    .admin-dashboard p {
+      font-size: 1rem;
+    }
+  
+    .add-apartment-form,
+    .tenant-card,
+    .occupied-apartment-card {
+      margin: 10px 0;
+    }
+  
+    .apartments-list th,
+    .apartments-list td {
+      font-size: 0.9rem; /* Adjust table text for mobile */
+      padding: 8px;
+    }
+  
+    .add-apartment-form input,
+    .add-apartment-form select {
+      padding: 8px;
+    }
+  
+    .btn-add {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .pie-chart-container {
+      height: 250px; /* Make chart container smaller */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-dashboard {
+      padding: 5px;
+    }
+  
+    .admin-dashboard h1 {
+      font-size: 1.8rem; /* Further adjust for very small screens */
+    }
+  
+    .admin-dashboard p {
+      font-size: 0.9rem;
+    }
+  
+    .add-apartment-form input,
+    .add-apartment-form select {
+      padding: 6px;
+    }
+  
+    .btn-add {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    .tenant-card,
+    .occupied-apartment-card {
+      padding: 15px;
+    }
+  
+    .pie-chart-container {
+      height: 200px; /* Further reduce chart size for small screens */
+    }
+  }
+  

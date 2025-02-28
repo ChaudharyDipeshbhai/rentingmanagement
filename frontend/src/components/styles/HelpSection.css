@@ -1,0 +1,88 @@
+.help-section {
+  padding: 50px;
+  background-image: url("C:\Users\Het\Downloads\walpaper.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; /* White text for the content */
+  text-align: center;
+  position: relative;
+}
+
+.help-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.help-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2; /* Ensure the container appears above the overlay */
+  position: relative;
+}
+
+.help-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.help-card {
+  background-color: #333; /* Dark background for each card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for cards */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: 15px;
+  text-align: left;
+  z-index: 2; /* Ensure the card is above the overlay */
+}
+
+.help-card h3 {
+  font-size: 20px;
+  color: white; /* White text for headings */
+  margin-bottom: 15px;
+}
+
+.help-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.help-card li {
+  margin: 10px 0;
+}
+
+.help-card a {
+  color: #00bfff; /* Light blue link color for contrast */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.help-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  color: white; /* White text for contact note */
+  margin-top: 30px;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.contact-note a {
+  color: #00bfff; /* Light blue link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-note a:hover {
+  text-decoration: underline;
+}

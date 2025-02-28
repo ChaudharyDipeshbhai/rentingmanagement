@@ -1,0 +1,143 @@
+/* About Section Styling */
+.about-section {  
+  background-image: url("C:/Users/Het/Downloads/walpaper.png"); /* Ensure proper path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Overlay for better readability */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: -1;
+}
+
+/* Content container */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  color: #E0F7FA;
+}
+
+/* Section heading */
+.about-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #00BFFF; /* Deep Sky Blue */
+  font-weight: bold;
+}
+
+/* Paragraph styling */
+.about-content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Cards container */
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Individual card styling */
+.feature-card {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Icon for cards */
+.card-icon {
+  font-size: 3rem;
+  color: #00BFFF;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.feature-card:hover .card-icon {
+  color: #4682B4; /* Steel Blue on hover */
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+/* Card description */
+.card-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Call-to-action button */
+.cta-button {
+  background-color: #1E90FF; /* Dodger Blue */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.cta-button:hover {
+  background-color: #4682B4;
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 10px;
+  }
+
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}

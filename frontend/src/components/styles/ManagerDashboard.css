@@ -1,0 +1,66 @@
+.manager-dashboard {
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  h1, h2 {
+    color: #000000;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .btn-add, .btn-submit {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-add:hover, .btn-submit:hover {
+    background-color: #000000;
+  }
+  
+  .add-apartment-form input, .add-apartment-form select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn-action {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .btn-action:hover {
+    background-color: #218838;
+  }
+  
+  .btn-action + .btn-action {
+    background-color: #dc3545;
+  }
+  
+  .btn-action + .btn-action:hover {
+    background-color: #c82333;
+  }
+  

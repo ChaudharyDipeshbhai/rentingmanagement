@@ -1,0 +1,97 @@
+/* styles/TenantDashboard.css */
+
+/* General dashboard styling */
+.tenant-dashboard {
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+}
+
+/* Introductory text */
+.tenant-dashboard p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Apartment details card */
+.occupied-apartment {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.apartment-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.apartment-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.apartment-card strong {
+  color: #000;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Form inputs */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Table styling (if needed for tenant details) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
